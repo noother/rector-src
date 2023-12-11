@@ -66,7 +66,7 @@ final class ReturnedNodesReturnTypeInfererTypeInferer
             $types[] = new VoidType();
         }
 
-        return $this->typeFactory->createMixedPassedOrUnionType($types);
+        return $this->typeFactory->createMixedPassedOrUnionTypeAndKeepConstant($types);
     }
 
     /**
